@@ -1,0 +1,17 @@
+<!--The content below is only a placeholder and can be replaced.-->
+
+
+<div class="container">
+  <div class="row">
+    <div class="col-xs-12">
+      <h2>{{ title }}</h2>
+      <ul class="list-group">
+        <app-post-list  *ngFor="let postlistitem of postlist"
+                       [postTitle]="postlistitem.title"
+                       [postContent]="postlistitem.content"
+                       [postLoveIts]="postlistitem.loveIts">
+        </app-post-list>
+      </ul>
+    </div>
+  </div>
+</div>
